@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient Registration Form</title>
+</head>
+<body>
+	 <h1>Patient Registration Form</h1>
+    <form action="/Patient" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="marial_Status">Marital Status:</label>
+        <select id="marial_Status" name="marial_Status">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select><br>
+
+        <label for="present_address">Present Address:</label>
+        <textarea id="present_address" name="present_address"></textarea><br>
+
+        <label for="communication_address">Communication Address:</label>
+        <textarea id="communication_address" name="communication_address"></textarea><br>
+
+        <label for="past_medical_history">Past Medical History:</label>
+        <input type="checkbox" id="anemia" name="past_medical_history" value="anemia">
+        <label for="anemia">Anemia</label>
+        <input type="checkbox" id="asthma" name="past_medical_history" value="asthma">
+        <label for="asthma">Asthma</label>
+        <input type="checkbox" id="diabetes" name="past_medical_history" value="diabetes">
+        <label for="diabetes">Diabetes</label>
+        <input type="checkbox" id="cancer" name="past_medical_history" value="cancer">
+        <label for="cancer">Cancer</label>
+        <input type="checkbox" id="ulcer" name="past_medical_history" value="ulcer">
+        <label for="ulcer">Ulcer</label>
+        <input type="checkbox" id="chickenpox" name="past_medical_history" value="chickenpox">
+        <label for="chickenpox">Chickenpox</label>
+        <input type="checkbox" id="other" name="past_medical_history" value="other">
+        <label for="other">Other</label><br>
+
+        <label for="other_details">Other Details:</label>
+        <textarea id="other_details" name="other_details"></textarea><br>
+
+        <input type="submit" value="Register">
+        <input type="button" value="Cancel">
+        
+    </form>
+</body>
+</html>

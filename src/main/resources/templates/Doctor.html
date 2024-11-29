@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"></html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Doctor Registration Form</title>
+</head>
+<body>
+<body>
+	 <h1>Doctor Registration Form</h1>
+    <form action="/Doctor" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="emailid">Email:</label>
+        <input type="email" id="emailid" name="emailid" required><br>
+
+        <label for="specialization">Specialization:</label>
+        <input type="text" id="specialization" name="specialization"><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="note">Note:</label>
+        <textarea id="note" name="note"></textarea><br>
+
+        <input type="submit" value="Register">
+        <input type="button" value="Cancel">
+    </form>
+</body>
+</body>
+</html>
